@@ -14,11 +14,7 @@ function eqArrays(arr1, arr2) {
 }
 
 function assertArraysEqual(arr1, arr2) {
-    // if (eqArrays(arr1, arr2)) {
-    //     console.log("they are equal")
-    // } else {
-    //     console.log("they are not equal")
-    // }
+   
     return eqArrays(arr1, arr2) ? console.log("they are equal") : console.log("they are not equal")
 }
 
