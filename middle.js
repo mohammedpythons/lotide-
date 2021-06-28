@@ -1,5 +1,5 @@
-const eqArrays = require("./eqArrays")
-const assertArraysEqual = require("./assertArraysEqual")
+
+
 
 function middle(arrOne) {
     let container = []
@@ -16,5 +16,7 @@ function middle(arrOne) {
     }
     return container;
 }
-console.log(assertArraysEqual(middle([3,5, 7,6, 8, 7, 8,9]), [6,8]))
+
+
+module.exports = middle
 
