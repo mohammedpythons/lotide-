@@ -5,4 +5,7 @@ function assertArraysEqual(arr1, arr2) {
     return eqArrays(arr1, arr2) ? console.log("they are equal") : console.log("they are not equal")
 }
 
-console.log(assertArraysEqual([1, 2, 3], [1, 2, 3]))
+
+// i removed the test code here because i'm using this code in the middle file, and the test code is in asserArraysEqualTest.js
+
+module.exports = assertArraysEqual

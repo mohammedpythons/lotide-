@@ -1,23 +1,5 @@
-function eqArrays(arr1, arr2) {
-    let result;
-    
-    for (let j =0; j < arr2.length; j++) {
-        if (arr1[j] === arr2[j]) {
-            result = true;
-        }else {
-            result = false;
-            return result;
-        }
-    }
-    
-    return result
-}
-
-
-function assertArraysEqual(arr1, arr2) {
-   
-    return eqArrays(arr1, arr2) ? console.log("they are equal") : console.log("they are not equal")
-}
+const eqArrays = require("./eqArrays")
+const assertArraysEqual = require("./assertArraysEqual")
 
 function middle(arrOne) {
     let container = []
@@ -34,5 +16,5 @@ function middle(arrOne) {
     }
     return container;
 }
-console.log(middle([3,5, 7,6, 8, 7, 8,9]))
+console.log(assertArraysEqual(middle([3,5, 7,6, 8, 7, 8,9]), [6,8]))
 
