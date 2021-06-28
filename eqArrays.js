@@ -15,5 +15,6 @@ function eqArrays(arr1, arr2) {
     return result
 }
 
-console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true))
-console.log(assertEqual(eqArrays([1, 22, 3], [1, 2, 3]), true))
+// i moved this code test to eqArraysTest.js file because i used this function in assertArraysEqual.js
+
+module.exports = eqArrays
