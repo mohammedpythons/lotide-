@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+
 
 function head(arr){
     let first;
